@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="number" type="number" placeholder="Enter your age" />
+    <button onclick="CheckNumber()">Submit</button>
+  </body>
+  <script>
+    function CheckNumber() {
+      const age = document.getElementById("number").value;
+      if (!age) {
+        alert("Please enter your Age");
+      } else if (age > 18) {
+        alert("Your age is valid for Driving license");
+      } else if (age == 18) {
+        alert("Your are allowed to get Driving license");
+      } else {
+        alert("Your age is not valid for Driving license");
+      }
+    }
+  </script>
+</html>
